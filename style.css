@@ -10,7 +10,8 @@ body {
   background-color: #eef2f4;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -63,11 +64,6 @@ img {
   border-radius: 4px;
 }
 
-.search-row button:hover {
-  background-color: #084f5c;
-  border-color: #084f5c;
-}
-
 @media (width >= 48rem) {
   .search-row {
     flex-direction: row;
@@ -98,6 +94,61 @@ main {
   justify-content: center;
 }
 
+.card {
+  flex: 1 1 18rem;
+  min-width: 16rem;
+  max-width: 24rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #b8c4cb;
+  border-radius: 8px;
+}
+
+.poster-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  margin-bottom: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4a5a66;
+  background-color: #dfe6ea;
+  border-radius: 4px;
+}
+
+.poster-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.card-summary {
+  margin: 0 0 0.75rem 0;
+}
+
+.card-detail {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.95rem;
+}
+
+.card-detail strong {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #0b6e7f;
+}
+
 .site-footer {
   margin-top: 2rem;
   padding: 1.25rem 1rem;
@@ -109,8 +160,4 @@ main {
 
 .site-footer a {
   color: #8fd9e8;
-}
-
-.site-footer a:hover {
-  color: white;
 }
